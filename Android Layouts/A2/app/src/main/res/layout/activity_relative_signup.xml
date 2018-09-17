@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeSignup"
+    android:paddingLeft="10px"
+    android:paddingRight="30px">
+
+    <TextView
+        android:id="@+id/signUpTv"
+        android:layout_width="292dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="Relative Sign Up"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/GenderTv"
+        android:layout_width="97dp"
+        android:layout_height="33dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/checkBox"
+        android:layout_alignLeft="@id/checkBox"
+        android:layout_marginBottom="236dp"
+        android:text="Gender:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/PasswordET"
+        android:layout_width="299dp"
+        android:layout_height="68dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="183dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/emailEt"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="124dp"
+        android:ems="10"
+        android:hint="Email address"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="157dp"
+        android:text="Accept terms and conditions"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/RegisterButton"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp"
+        android:text="Register"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/Gender"
+        android:layout_width="189dp"
+        android:layout_height="85dp"
+        android:layout_alignEnd="@+id/signUpTv"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="209dp">
+
+        <RadioButton
+            android:id="@+id/MaleRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Male"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/FemaleRB"
+            android:layout_width="match_parent"
+            android:layout_height="21dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Female"
+            android:textSize="14sp" />
+    </RadioGroup>
+</RelativeLayout>

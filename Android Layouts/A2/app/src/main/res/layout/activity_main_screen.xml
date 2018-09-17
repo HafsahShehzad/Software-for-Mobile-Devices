@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="350px"
+    android:paddingBottom="40px"
+    android:paddingLeft="30px"
+    android:paddingRight="30px"
+
+    tools:context=".MainScreen">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SMD Assignment 2"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/rollNoTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="15L-4338"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/constraintButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Constraint Layout"
+        android:textSize="18sp"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/RelativeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Relative Layout"
+        android:textSize="18sp" />
+
+</LinearLayout>
