@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.apple.tabssample">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activities.SplashScreen"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".Fragments.TabFragment1"
+            android:label="@string/title_activity_tab_fragment1"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Fragments.TabFragment2" />
+        <activity android:name=".Fragments.TabFragment3" />
+        <activity android:name=".Fragments.TabFragment4" />
+        <activity android:name=".Activities.PostActivity" >
+        </activity>
+        <activity android:name=".Fragments.PostTabFragment1" />
+        <activity android:name=".Fragments.PostTabFragment2" />
+        <activity android:name=".Fragments.PostTabFragment3" />
+        <activity android:name=".Activities.ViewEvent" />
+        <activity android:name=".Activities.homepage" />
+        <activity
+            android:name=".Activities.login"
+            android:label="login" />
+        <activity
+            android:name=".Activities.signup"
+            android:label="signup" />
+        <activity
+            android:name=".Activities.forgotPassword"
+            android:label="forgotPassword" />
+        <activity
+            android:name=".Activities.profile"
+            android:label="profile" />
+        <activity
+            android:name=".Activities.editProfile"
+            android:label="editProfile" />
+        <activity
+            android:name=".Activities.CreateEvent"
+            android:label="CreateEvent" />
+        <activity
+            android:name=".Activities.createTrip"
+            android:label="createTrip" />
+        <activity
+            android:name=".Activities.FollowersAndFollowing"
+            android:label="FollowersAndFollowing" />
+        <activity
+            android:name=".Activities.ListItemFollowersAndFollowing"
+            android:label="ListItemFollowersAndFollowing" />
+        <activity android:name=".Activities.TripPreview" />
+        <activity android:name=".Activities.EventPreview"></activity>
+        <activity android:name=".Activities.setPicture"></activity>
+        <activity android:name=".Activities.changeProfilePic"></activity>
+        <activity android:name=".Activities.createPost"></activity>
+        <activity android:name=".Activities.ViewPost"></activity>
+        <activity android:name=".Activities.LikeAndComment"></activity>
+        <activity android:name=".Activities.PictureCommentActivity"></activity>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAZ7O-v1xRYcC6-WFpOyEsKYiqEXYfm8Jc"/>
+
+    </application>
+
+</manifest>

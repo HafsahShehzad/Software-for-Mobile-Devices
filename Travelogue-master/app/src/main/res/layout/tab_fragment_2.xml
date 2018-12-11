@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:fillViewport="true">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:text="Tab 2"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <include
+
+        layout="@layout/single_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <include
+
+        layout="@layout/single_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <include
+
+        layout="@layout/single_event"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</ScrollView>

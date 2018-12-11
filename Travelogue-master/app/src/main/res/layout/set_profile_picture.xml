@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="68dp"
+
+        android:src="@drawable/camera"
+        app:civ_border_color="@color/MintCream"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/setPicture"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="@+id/setPicture"
+        app:layout_constraintTop_toBottomOf="@+id/setPicture" />
+
+    <TextView
+        android:id="@+id/personalse"
+        android:layout_width="225dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="serif"
+        android:text="@string/personalize"
+        android:textAlignment="center"
+        android:textColor="@color/MintCream"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/setPicture"
+        android:layout_width="219dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:text="@string/setPicture"
+        android:textAlignment="center"
+        android:textColor="@color/MintCream"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/personalse"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/personalse"
+        app:layout_constraintTop_toBottomOf="@+id/personalse" />
+
+    <Button
+        android:id="@+id/select"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="32dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClickChoose"
+        android:text="@string/choose"
+        android:textColor="@color/MintCream"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/later"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClickLater"
+        android:text="@string/not_now"
+        android:textColor="@color/MintCream"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/select" />
+
+</android.support.constraint.ConstraintLayout>

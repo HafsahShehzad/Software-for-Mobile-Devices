@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/darker"
+    tools:context=".Activities.createTrip">
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar">
+
+    </include>
+
+
+    <TextView
+        android:id="@+id/tripEnd"
+        android:layout_width="86dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tripend"
+        android:textAllCaps="true"
+        android:textColor="@color/MintCream"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tripStartDate" />
+
+    <TextView
+        android:id="@+id/createNewTrip"
+        android:layout_width="227dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:text="@string/createNewTrip"
+        android:textColor="@color/MintCream"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tripName"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/tripName"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createNewTrip" />
+
+    <TextView
+        android:id="@+id/tripStartDate"
+        android:layout_width="153dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/startDate"
+        android:inputType="date"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tripStartDateButton" />
+
+    <TextView
+        android:id="@+id/tripEndDate"
+        android:layout_width="153dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/endDate"
+        android:inputType="date"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tripEndDateButton" />
+
+    <TextView
+        android:id="@+id/tripStart"
+        android:layout_width="111dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tripStart"
+        android:textAllCaps="true"
+        android:textColor="@color/MintCream"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tripStartDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tripName" />
+
+    <TextView
+        android:id="@+id/tripStartLocation"
+        android:layout_width="153dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/tripstartLocation"
+        android:inputType="textPostalAddress"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.829"
+        app:layout_constraintStart_toEndOf="@+id/tripStartDate"
+        app:layout_constraintTop_toBottomOf="@+id/selectStartLocationButton" />
+
+    <TextView
+        android:id="@+id/tripEndLocation"
+        android:layout_width="153dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/endlocation"
+        android:inputType="textPostalAddress"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintStart_toEndOf="@+id/tripEndDate"
+        app:layout_constraintTop_toBottomOf="@+id/selectEndLocationButton" />
+
+    <EditText
+        android:id="@+id/tripDescription"
+        android:layout_width="186dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/tripDescription"
+        android:inputType="textMultiLine"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="#FFFFFF"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tripEndDate" />
+
+    <Button
+        android:id="@+id/uploadTripPhotos"
+        android:layout_width="154dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="add_trip_photo"
+        android:text="@string/addPhotos"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/tripImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tripDescription"
+        app:layout_constraintTop_toBottomOf="@+id/tripEndLocation" />
+
+    <CheckBox
+        android:id="@+id/privateTrip"
+        android:layout_width="163dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:checked="true"
+        android:text="Private"
+        android:textColor="@color/MintCream"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tripDescription" />
+
+    <Button
+        android:id="@+id/createTripButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="create_trip"
+        android:text="@string/create_trip"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tripImage" />
+
+    <Button
+        android:id="@+id/selectStartLocationButton"
+        android:layout_width="154dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="selectStartLocation"
+        android:text="@string/tripstartLocation"
+        android:textColor="@color/MintCream"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.849"
+        app:layout_constraintStart_toEndOf="@+id/tripStartDate"
+        app:layout_constraintTop_toBottomOf="@+id/tripStart" />
+
+    <Button
+        android:id="@+id/selectEndLocationButton"
+        android:layout_width="154dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="selectEndLocation"
+        android:text="@string/endlocation"
+        android:textColor="@color/MintCream"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.789"
+        app:layout_constraintStart_toEndOf="@+id/tripEndDate"
+        app:layout_constraintTop_toBottomOf="@+id/tripEnd" />
+
+    <Button
+        android:id="@+id/tripStartDateButton"
+        android:layout_width="154dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="selectStartDate"
+        android:text="@string/startDate"
+        android:textColor="@color/MintCream"
+        app:layout_constraintEnd_toStartOf="@+id/selectStartLocationButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tripStart" />
+
+    <Button
+        android:id="@+id/tripEndDateButton"
+        android:layout_width="154dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="selectEndDate"
+        android:text="@string/endDate"
+        android:textColor="@color/MintCream"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tripEnd" />
+
+    <ImageView
+        android:id="@+id/tripImage"
+        android:layout_width="148dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintStart_toEndOf="@+id/privateTrip"
+        app:layout_constraintTop_toBottomOf="@+id/uploadTripPhotos"
+        app:srcCompat="@drawable/logo2" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images"
+    tools:context=".Activities.CreateEvent">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar">
+
+    </include>
+
+
+
+    <TextView
+        android:id="@+id/eventStartTime"
+        android:layout_width="164dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/startTime"
+        android:inputType="date"
+        android:text="@string/eventStartTime"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eventStartDate"
+        app:layout_constraintTop_toBottomOf="@+id/eventStartTimeButton" />
+
+    <EditText
+        android:id="@+id/eventName"
+        android:layout_width="341dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/eventname"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/eventStartDate"
+        android:layout_width="164dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/startDate"
+        android:inputType="date"
+        android:text="@string/eventStartDate"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventStartDateButton" />
+
+    <TextView
+        android:id="@+id/eventPlace"
+        android:layout_width="177dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="220dp"
+
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/place"
+        android:inputType="textPersonName"
+        android:text="@string/your_event_location"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/moreEventInfo"
+        android:layout_width="346dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/eventDescription"
+        android:inputType="textMultiLine"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventPlace" />
+
+    <ImageView
+        android:id="@+id/eventImage"
+        android:layout_width="166dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/tuscany"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/createEvent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moreEventInfo"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/images" />
+
+    <Button
+        android:id="@+id/createEvent"
+        style="@style/AppTheme"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="create_event"
+        android:text="@string/create_event"
+        android:textAllCaps="false"
+        android:textColor="@color/MintCream"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:text="@string/createNewEvent"
+        android:textColor="@color/MintCream"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/eventLocationButton"
+        android:layout_width="161dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="selectEventLocation"
+        android:text="@string/eventLocation"
+        android:textColor="@color/MintCream"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/moreEventInfo"
+        app:layout_constraintEnd_toStartOf="@+id/eventPlace"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/eventImageUploadButton"
+        android:layout_width="161dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="upload_event_image"
+        android:text="@string/uploadImage"
+        android:textColor="@color/MintCream"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/createEvent"
+        app:layout_constraintEnd_toStartOf="@+id/eventImage"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moreEventInfo"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <Button
+        android:id="@+id/eventStartTimeButton"
+        android:layout_width="140dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundedbutton"
+        android:textColor="@color/MintCream"
+        android:onClick="showStartTimePicker"
+        android:text="@string/startTime"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toEndOf="@+id/eventStartDateButton"
+        app:layout_constraintTop_toBottomOf="@+id/eventName" />
+
+    <Button
+        android:id="@+id/eventStartDateButton"
+        android:layout_width="140dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundedbutton"
+        android:textColor="@color/MintCream"
+        android:onClick="showStartDatePicker"
+        android:text="@string/startDate"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/eventStartTimeButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventName" />
+
+    <Button
+        android:id="@+id/eventEndDateButton"
+        android:layout_width="140dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundedbutton"
+        android:textColor="@color/MintCream"
+        android:onClick="showEndDatePicker"
+        android:text="@string/endDate"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/eventEndTimeButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventStartDate" />
+
+    <Button
+        android:id="@+id/eventEndTimeButton"
+        android:layout_width="140dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="showEndTimePicker"
+        android:text="@string/endTime"
+        android:textSize="10sp"
+        android:textColor="@color/MintCream"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/eventEndDateButton"
+        app:layout_constraintTop_toBottomOf="@+id/eventStartTime" />
+
+    <TextView
+        android:id="@+id/eventEndDate"
+        android:layout_width="164dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/eventendDate"
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/eventLocationButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventEndDateButton"
+        app:layout_constraintVertical_bias="0.107" />
+
+    <TextView
+        android:id="@+id/eventEndTime"
+        android:layout_width="164dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/eventendTime"
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/eventPlace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toEndOf="@+id/eventEndDate"
+        app:layout_constraintTop_toBottomOf="@+id/eventEndTimeButton"
+        app:layout_constraintVertical_bias="0.096" />
+
+
+</android.support.constraint.ConstraintLayout>
